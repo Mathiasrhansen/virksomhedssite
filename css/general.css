@@ -1,0 +1,87 @@
+html,
+body,
+header,
+footer,
+main,
+nav,
+ul,
+#main-disclamer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Anton;
+    src: url(../font/Anton-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../font/Inter_18pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter-Semibold;
+    src: url(../font/Inter_18pt-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Inter-Blackitalic;
+    src: url(../font/Inter_24pt-BlackItalic.ttf);
+}
+
+h1 {
+    font-family: var(--headline-font);
+}
+
+h2 {
+    font-family: var(--secondary-headline-font);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+/* Navbar */
+ul, li {
+    list-style-type: none;
+}
+
+li a {
+    font-family: var(--default-font);
+    text-decoration: none;
+    color: var(--logo-color);
+    
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  border-bottom: 1px var(--logo-color);
+}
+
+.navbar-flex li:not(.centered-logo) {
+  flex: 1 0 auto;
+  text-align: center;
+}
+
+.logo {
+   padding: 10px;
+}
+
+.logo-pic {
+    height: 2rem;
+    width: auto;
+}
+
+header{
+    border-bottom: 1px var(--logo-color) solid;
+}

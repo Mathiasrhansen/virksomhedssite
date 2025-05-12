@@ -1,5 +1,11 @@
 :root{
 /* Farvepalette */
---logofarve: #F25A38;
+--logo-color: #E56035;
+--background-color: #FAF5EE;
 
+/* Fonts */
+--logo-font: "Inter-Blackitalic", sans-serif;
+--headline-font: "Anton", sans-serif;
+--secondary-headline-font: "Inter-Semibold", sans-serif;
+--default-font: "Inter-Regular", sans-serif;
 }
