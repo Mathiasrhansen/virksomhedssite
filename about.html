@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
     <title>About</title>
   </head>
   <body>
@@ -29,7 +30,105 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="grid_1-1">
+        <div class="left">
+        <img src="/img/trainers.jpeg" alt="about" id="billede">
+        </div>
+        <div class="right">
+        <h2>ABOUT</h2>
+        <ul class="faq-list">
+          <li>
+            <button class="knap1">
+              <span class="label">OUR CONCEPT</span>
+              <span class="icon">
+                <svg class="plus" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="20.5" y1="2.40413e-08" x2="20.5" y2="40" stroke="black"/>
+                  <line x1="40" y1="20.5" x2="-4.37114e-08" y2="20.5" stroke="black"/>
+                </svg>                  
+                <svg class="close" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="15.211" y1="14.5048" x2="43.4953" y2="42.7891" stroke="black"/>
+                  <line x1="43.4942" y1="15.212" x2="15.2099" y2="43.4962" stroke="black"/>
+                </svg>                  
+              </span>
+            </button>
+            <div class="content">
+              <p>Born in the heart of copenhagen more than 5 years ago, we started something to be opposite mainstream fitness. No heavy weights. No dimmed lights. No mirrors. No photoshopped proteinshake commercials. Just pure small group training with focus on making you faster, stronger, better and perhaps also happier!</p>
+            </div>
+          </li>
+        </ul>
+        <ul class="faq-list">
+          <li>
+            <button class="knap1">
+              <span class="label">OUR COACHES</span>
+              <span class="icon">
+                <svg class="plus" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="20.5" y1="2.40413e-08" x2="20.5" y2="40" stroke="black"/>
+                  <line x1="40" y1="20.5" x2="-4.37114e-08" y2="20.5" stroke="black"/>
+                </svg>                  
+                <svg class="close" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="15.211" y1="14.5048" x2="43.4953" y2="42.7891" stroke="black"/>
+                  <line x1="43.4942" y1="15.212" x2="15.2099" y2="43.4962" stroke="black"/>
+                </svg>                  
+              </span>
+            </button>
+            <div class="content">
+              <p>Her er teksten til Punkt 1.</p>
+            </div>
+          </li>
+        </ul>
+        <ul class="faq-list">
+          <li>
+            <button class="knap1">
+              <span class="label">PUNKT</span>
+              <span class="icon">
+                <svg class="plus" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="20.5" y1="2.40413e-08" x2="20.5" y2="40" stroke="black"/>
+                  <line x1="40" y1="20.5" x2="-4.37114e-08" y2="20.5" stroke="black"/>
+                </svg>                  
+                <svg class="close" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="15.211" y1="14.5048" x2="43.4953" y2="42.7891" stroke="black"/>
+                  <line x1="43.4942" y1="15.212" x2="15.2099" y2="43.4962" stroke="black"/>
+                </svg>                  
+              </span>
+            </button>
+            <div class="content">
+              <p>Her er teksten til Punkt 1.</p>
+            </div>
+          </li>
+        </ul>
+        <ul class="faq-list">
+          <li>
+            <button class="knap1">
+              <span class="label">PUNKT</span>
+              <span class="icon">
+                <svg class="plus" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="20.5" y1="2.40413e-08" x2="20.5" y2="40" stroke="black"/>
+                  <line x1="40" y1="20.5" x2="-4.37114e-08" y2="20.5" stroke="black"/>
+                </svg>                  
+                <svg class="close" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="15.211" y1="14.5048" x2="43.4953" y2="42.7891" stroke="black"/>
+                  <line x1="43.4942" y1="15.212" x2="15.2099" y2="43.4962" stroke="black"/>
+                </svg>                  
+              </span>
+            </button>
+            <div class="content">
+              <p>Her er teksten til Punkt 1.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </section>
+    </main>
     <footer></footer>
+    <script>
+      document.querySelectorAll('.knap1').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const content = btn.nextElementSibling;
+          btn.classList.toggle('active');
+          content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+      });
+    </script>
   </body>
 </html>
