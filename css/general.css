@@ -33,11 +33,19 @@ ul,
 
 h1 {
     font-family: var(--headline-font);
+    color: var(--logo-color);
+    font-size: 32px;
 }
 
 h2 {
     font-family: var(--secondary-headline-font);
+    font-size: 20px;
 }
+
+p {
+    font-family: var(--default-font);
+}
+
 
 body {
     background-color: var(--background-color);
