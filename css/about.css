@@ -10,7 +10,7 @@
     display: block;
 }
   
-.right h2 {
+.right h1 {
     padding: 2rem;
     border-bottom: 1px solid var(--logo-color);
     color: var(--logo-color);
@@ -36,7 +36,7 @@
 }
 
 .label {
-    padding-left: 0.6cm;
+    padding-left: 0.7cm;
 }
   
 .content {
