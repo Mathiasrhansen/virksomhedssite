@@ -29,7 +29,99 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="contact_grid_1-1">
+        <div class="contact_div">
+          <img src="img/img_contact.webp" alt="holding hands" />
+        </div>
+        <div class="contact_div">
+          <h1 class="contact_h1">CONTACT US</h1>
+          <section id="form-section">
+            <form id="webform">
+              <fieldset>
+                <div>
+                  <label for="full-name">YOUR NAME</label>
+                  <div style="display: flex">
+                    <input
+                      id="full-name"
+                      name="fname"
+                      type="text"
+                      placeholder="Name"
+                      required
+                      minlength="3"
+                      maxlength="70"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label for="email">YOUR EMAIL</label>
+                  <div style="display: flex">
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      required
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label>YOUR MESSAGE</label>
+                  <div style="display: flex">
+                    <textarea
+                      id="observation"
+                      name="observation"
+                      rows="5"
+                      cols="40"
+                      placeholder="..."
+                      maxlength="300"
+                    ></textarea>
+                  </div>
+                </div>
+                <div>
+                  <label for="phone">YOUR PHONE NUMBER</label>
+                  <div style="display: flex; gap: 10px">
+                    <select name="country-code" id="country-code">
+                      <option value="+45">+45 (Danmark)</option>
+                    </select>
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      placeholder="Phone number"
+                      required
+                      minlength="8"
+                      maxlength="8"
+                      pattern="\d{8}"
+                    />
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </section>
+          <button class="cta_btn" data-dialog="dialog1">SEND</button>
+          <dialog id="dialog1">
+            <h1>YOUR MESSAGE HAS BEEN SENT</h1>
+            <form method="dialog">
+              <button>CLOSE</button>
+            </form>
+          </dialog>
+        </div>
+      </section>
+    </main>
     <footer></footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".cta_btn");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const dialogId = button.getAttribute("data-dialog");
+            const dialog = document.getElementById(dialogId);
+            if (dialog) dialog.showModal();
+          });
+        });
+      });
+    </script>
   </body>
 </html>

@@ -43,6 +43,10 @@ body {
     background-color: var(--background-color);
 }
 
+button {
+    font-family: var(--default-font);
+}
+
 /* Navbar */
 ul, li {
     list-style-type: none;
@@ -84,4 +88,33 @@ li a:hover {
 
 header{
     border-bottom: 1px var(--logo-color) solid;
+}
+
+dialog {
+    background-color: var(--background-color);
+    border: 0cap;
+}
+label {
+    font-family: var(--headline-font);
+    font-size: larger;
+}
+dialog form {
+    padding: 10px;
+}
+input {
+    width: 100%;
+}
+.contact_h1 {
+    font-size: xx-large;
+    border-bottom: 1px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+textarea {
+    resize: none;
 }
