@@ -1,9 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .img1 {
   height: 550px;
   width: 350px;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .img2 {
   height: 450px;
   width: 450px;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div {
+  width: 100%;
+}
+
+h2,
+p {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+section:first-of-type {
+  padding-bottom: 100px;
+  border-bottom: 1px solid #e56035;
+  margin-bottom: 100px;
+}
+
+footer {
+  width: 100%;
+  border-top: 1px solid #e56035;
+  padding: 30px;
+  margin: 75px;
+}
+
+@media (width>=600px) {
+  .section_cause_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer {
+    width: 100%;
+    border-top: 1px solid #e56035;
+    padding: 30px;
+    margin: 75px;
+  }
 }
