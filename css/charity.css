@@ -44,11 +44,14 @@ section:first-of-type {
   margin-bottom: 100px;
 }
 
+section:last-of-type {
+  padding-bottom: 50px;
+}
+
 footer {
   width: 100%;
   border-top: 1px solid #e56035;
-  padding: 30px;
-  margin: 75px;
+  padding: 30px 20px;
 }
 
 @media (width>=600px) {
@@ -60,7 +63,6 @@ footer {
   footer {
     width: 100%;
     border-top: 1px solid #e56035;
-    padding: 30px;
-    margin: 75px;
+    padding: 30px 20px;
   }
 }
