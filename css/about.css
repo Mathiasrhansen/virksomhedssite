@@ -1,0 +1,128 @@
+@media only screen and (max-width: 480px) {
+    .grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .left {
+        grid-row: 1;
+    }
+    .right {
+        grid-row: 2;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 481px) {
+    .grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+  
+.left img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+  
+.right h1 {
+    padding: 1.5rem;
+    color: var(--logo-color);
+}
+
+.faq-list {
+    list-style: none;
+    font-family: var(--default-font);
+}
+  
+.knap1 {
+    width: 100%;
+    background: var(--background-color);
+    border: none;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-bottom: 1px solid var(--logo-color);
+}
+
+#our {
+    padding-top: 1em;
+    border-top: 1px solid var(--logo-color);
+}
+
+.label {
+    padding-left: 0.7cm;
+}
+  
+.content {
+    display: none;
+    padding-right: 2cm;
+    padding-left: 1.5cm;
+    padding-top: 0%;
+    padding-bottom: 1rem;
+    background: var(--background-color);
+    border-bottom: 1px solid var(--logo-color);
+    line-height: 0.7cm;
+}
+
+.plus {
+    padding-right: 1.3rem;
+}
+
+.icon .close {
+    display: none;
+}
+  
+.knap1.active .plus {
+    display: none;
+}
+  
+.knap1.active .close {
+    display: inline;
+    padding-right: 1rem;
+}
+
+.knap1.active {
+    border-bottom: none;
+}
+
+.content2 {
+    display: none;
+    padding-left: 1cm;
+    margin-bottom: 1rem;
+}
+.content2 p {
+    padding-right: 1.5cm;
+}
+.knap2 {
+    width: 100%;
+    background: var(--background-color);
+    border: none;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-top: 1px solid var(--logo-color);
+}
+.content2 img {
+    height: 300px;
+    box-shadow: 6px 6px 6px var(--logo-color);
+}
+
+.knap2 .close {
+    display: none;
+} 
+.knap2.active .close {
+    display: inline;
+    padding-right: 1rem;
+}
+.knap2.active .plus {
+    display: none;
+}
