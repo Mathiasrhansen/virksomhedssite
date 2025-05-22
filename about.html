@@ -190,26 +190,13 @@
     </main>
     <footer></footer>
     <script>
-      document.querySelectorAll('.knap1').forEach(btn => {
+      document.querySelectorAll('.knap1, .knap2').forEach(btn => {
         btn.addEventListener('click', () => {
           const content = btn.nextElementSibling;
           btn.classList.toggle('active');
           content.style.display = content.style.display === 'block' ? 'none' : 'block';
         });
       });
-    //   document.querySelectorAll('.knap2').forEach(btn => {
-    //     btn.addEventListener('click', () => {
-    //     const subContent = btn.nextElementSibling;
-    //     subContent.style.display = subContent.style.display === 'block' ? 'none' : 'block';
-    //   });
-    // });
-    document.querySelectorAll('.knap2').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const subContent = btn.nextElementSibling;
-    btn.classList.toggle('active');
-    subContent.style.display = subContent.style.display === 'block' ? 'none' : 'block';
-  });
-});
     </script>
   </body>
 </html>
