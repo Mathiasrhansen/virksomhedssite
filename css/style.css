@@ -1,0 +1,131 @@
+.responsive-img {
+    width: 100%;
+    height: auto;
+    border-right: 1px var(--logo-color) solid;
+}
+
+.headline-box {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--logo-color);
+    border-bottom: 1px var(--logo-color) solid;
+    height: 5rem;
+}
+
+.headline-box h1 {
+    margin: 0rem;
+    font-size: 36px;
+}
+
+/* Kalender */
+
+.calender-container, .calender-container-next, .calender-container-prev {
+    width: 95%;
+    padding: 1rem;
+}
+
+.calender, .calender-prev, .calender-next {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.week, .week-prev, .week-next {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cal-hide {
+    display: none;
+}
+
+.day {
+    font-weight: 100;
+}
+
+.calender th:first-child {
+    background-color: var(--logo-color);
+}
+
+.calender th, .calender-prev th, .calender-next th {
+    font-family: Inter-regular;
+    font-size: 14px;
+    width: 50%;
+    height: 2rem;
+    border: 1px var(--logo-color) solid;
+}
+
+ .calender td:last-child {
+    font-family: Inter-regular;
+    font-size: 13px;
+    background-color: var(--logo-color);
+    color: white;
+ }
+
+
+ /* Event */
+ .event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+ }
+
+ .event:last-child {
+    padding: 1rem;
+ }
+
+ .event-btn {
+    background-color: var(--logo-color);
+    font-size: 13px;
+    color: white;
+    border: 1px white solid;
+    cursor: pointer;
+ }
+
+dialog::backdrop{
+    backdrop-filter:blur(5px)
+}
+
+dialog {
+    width: 60%;
+    background-color: var(--background-color);
+    border: 1px var(--background-color) solid;
+}
+
+h1 {
+    color: var(--logo-color);
+    font-size: 36px;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-bottom: 1rem;
+    border-bottom: 1px var(--logo-color) solid;
+}
+
+.coach-pic {
+    height: 150px;
+    width: auto;
+}
+
+.activity-pic {
+    height: 300px;
+    width: auto;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.size {
+    height: 2rem;
+    width: 5rem;
+}

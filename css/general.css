@@ -48,14 +48,14 @@ ul, li {
     list-style-type: none;
 }
 
-li a {
+.navbar-flex a {
     font-family: var(--default-font);
     text-decoration: none;
     color: var(--logo-color);
     
 }
 
-li a:hover {
+.navbar-flex a:hover, .burger-menu a:hover {
     text-decoration: underline;
 }
 
@@ -66,9 +66,10 @@ li a:hover {
   flex-wrap: wrap;
   width: 100%;
   border-bottom: 1px var(--logo-color);
+  background-color: var(--background-color);
 }
 
-.navbar-flex li:not(.centered-logo) {
+.navbar-flex a:not(.centered-logo) {
   flex: 1 0 auto;
   text-align: center;
 }
@@ -84,4 +85,49 @@ li a:hover {
 
 header{
     border-bottom: 1px var(--logo-color) solid;
+}
+
+.burger {
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.burger-menu{
+    display: flex;
+    flex-flow: column;
+}
+
+.burger-menu a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--logo-color);
+    font-family: var(--default-font);
+    display: block;
+    width: 100%;
+    padding: 1rem 0 1rem;
+}
+
+.burger-menu a:not(:last-child) {
+    border-bottom: 1px var(--logo-color) solid;
+}
+
+.burger-menu a:first-child{
+    border-top: 1px var(--logo-color) solid;
+}
+
+/* Footer */
+.footer-flex {
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px var(--logo-color) solid;
+}
+
+.footer-flex li a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
 }

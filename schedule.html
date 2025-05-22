@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Training Regimen</title>
   </head>
@@ -13,23 +13,351 @@
     <header>
       <nav>
         <ul class="navbar-flex">
-          <li><a href="schedule.html">TRAINING REGIMEN</a></li>
-          <li><a href="retreats.html">RETREATS</a></li>
-          <li><a href="shop.html">SHOP</a></li>
-          <li class="centered-logo">
-            <a href="index.html">
-              <div class="logo">
-                <img class="logo-pic" src="img/logo.png" alt="" />
-              </div>
-            </a>
-          </li>
-          <li><a href="charity.html">A GOOD CAUSE</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
+          <a href="schedule.html">TRAINING REGIMEN</a>
+          <a href="retreats.html">RETREATS</a>
+          <a href="shop.html">SHOP</a>
+          <a class="centered-logo" href="index.html">
+            <div class="logo">
+              <img class="logo-pic" src="img/logo.png" alt="" />
+            </div>
+          </a>
+          <a href="charity.html">A GOOD CAUSE</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+          <div class="burger" id="burger">
+            <svg
+              width="38"
+              height="32"
+              viewBox="0 0 38 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.5 16H35.5"
+                stroke="#E56035"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M2 2H35"
+                stroke="#E56035"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M3 30H36"
+                stroke="#E56035"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
         </ul>
       </nav>
+      <div class="burger-menu visible" id="menu">
+        <a href="schedule.html">TRAINING REGIMEN</a>
+        <a href="retreats.html">RETREATS</a>
+        <a href="shop.html">SHOP</a>
+        <a href="charity.html">A GOOD CAUSE</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="main">
+      <section class="schedule-grid_1-1">
+        <img class="responsive-img" src="img/schedule.png" alt="" />
+        <div class="shell">
+          <div class="headline-box">
+            <h1>TRAINING REGIMEN</h1>
+          </div>
+          <!-- Kalender container - nu -->
+          <div id="current" class="calender-container">
+            <!-- Ugecounter + knapper -->
+            <div class="week">
+              <div class="arrow-left" id="last-week" style="cursor: pointer">
+                <svg
+                  width="27"
+                  height="16"
+                  viewBox="0 0 27 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM26 9C26.5523 9 27 8.55228 27 8C27 7.44772 26.5523 7 26 7V9ZM1 8V9H26V8V7H1V8Z"
+                    fill="#E56035"
+                  />
+                </svg>
+              </div>
+              <p id="ugetekst">WEEK 21</p>
+              <div class="arrow-right" id="next-week" style="cursor: pointer">
+                <svg
+                  width="27"
+                  height="16"
+                  viewBox="0 0 27 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM26 8V7L1 7V8V9L26 9V8Z"
+                    fill="#E56035"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- Kalender -->
+            <div>
+              <table class="calender">
+                <tr>
+                  <th>
+                    <div class="day">MONDAY</div>
+                    <div>19. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">TUESDAY</div>
+                    <div>20. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">WEDNESDAY</div>
+                    <div>21. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">THURSDAY</div>
+                    <div>22. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">FRIDAY</div>
+                    <div>23. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">SATURDAY</div>
+                    <div>24. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">SUNDAY</div>
+                    <div>25. MAY</div>
+                  </th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="event">
+                    <div>04:00-05:00</div>
+                    <div>MORNING RUN</div>
+                    <div>SYDHAVNEN</div>
+                    <dialog id="dialog1">
+                      <form method="dialog">
+                        <section class="event-grid">
+                          <div>
+                            <h1 style="margin: 0"><i>MORNING RUN</i></h1>
+                            <h2 style="margin: 0 0 3rem 0">
+                              WEDNESDAY, MAY 17, 2025 | 4:00-5:00
+                            </h2>
+                            <div>
+                              <img
+                                class="coach-pic"
+                                src="img/coachk.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div>
+                            <img
+                              class="activity-pic"
+                              src="img/run.png"
+                              alt=""
+                            />
+                          </div>
+                        </section>
+                        <section class="description">
+                          <div>
+                            <p>
+                              Join us for a morning run, bla bla bla løb hurtigt
+                              og stærkt Join us for a morning run, bla bla bla
+                            </p>
+                            <p>Location: Sydhavnen</p>
+                          </div>
+                          <button class="event-btn size" id="closeBtn">
+                            SIGN UP
+                          </button>
+                        </section>
+                      </form>
+                    </dialog>
+                    <button id="sign-up1" class="event-btn">SIGN UP</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- Kalender container - sidste uge -->
+          <div id="prev" class="calender-container-prev cal-hide">
+            <!-- Ugecounter + knapper -->
+            <div class="week-prev">
+              <div class="arrow-left">
+                <svg
+                  width="27"
+                  height="16"
+                  viewBox="0 0 27 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM26 9C26.5523 9 27 8.55228 27 8C27 7.44772 26.5523 7 26 7V9ZM1 8V9H26V8V7H1V8Z"
+                    fill="#E56035"
+                    fill-opacity="0.7"
+                  />
+                </svg>
+              </div>
+              <p>WEEK 20</p>
+              <div
+                class="arrow-right"
+                id="prev-week-next"
+                style="cursor: pointer"
+              >
+                <svg
+                  width="27"
+                  height="16"
+                  viewBox="0 0 27 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM26 8V7L1 7V8V9L26 9V8Z"
+                    fill="#E56035"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- Kalender -->
+            <div class="">
+              <table class="calender-prev">
+                <tr>
+                  <th>
+                    <div class="day">MONDAY</div>
+                    <div>12. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">TUESDAY</div>
+                    <div>13. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">WEDNESDAY</div>
+                    <div>14. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">THURSDAY</div>
+                    <div>15. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">FRIDAY</div>
+                    <div>16. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">SATURDAY</div>
+                    <div>17. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">SUNDAY</div>
+                    <div>18. MAY</div>
+                  </th>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- Kalender container - næste uge -->
+          <div class="calender-container-next cal-hide" id="next">
+            <!-- Ugecounter + knapper -->
+            <div class="week-next">
+              <div
+                class="arrow-left"
+                id="next-week-prev"
+                style="cursor: pointer"
+              >
+                <svg
+                  id="next-prev"
+                  width="27"
+                  height="16"
+                  viewBox="0 0 27 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM26 9C26.5523 9 27 8.55228 27 8C27 7.44772 26.5523 7 26 7V9ZM1 8V9H26V8V7H1V8Z"
+                    fill="#E56035"
+                  />
+                </svg>
+              </div>
+              <p>WEEK 22</p>
+              <div class="arrow-right-inactive">
+                <svg
+                  width="27"
+                  height="16"
+                  viewBox="0 0 27 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM1 7C0.447716 7 0 7.44772 0 8C0 8.55228 0.447716 9 1 9V7ZM26 8V7L1 7V8V9L26 9V8Z"
+                    fill="#E56035"
+                    fill-opacity="0.7"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- Kalender -->
+            <div>
+              <table class="calender-next">
+                <tr class="cal-next">
+                  <th>
+                    <div class="day">MONDAY</div>
+                    <div>26. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">TUESDAY</div>
+                    <div>27. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">WEDNESDAY</div>
+                    <div>28. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">THURSDAY</div>
+                    <div>29. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">FRIDAY</div>
+                    <div>30. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">SATURDAY</div>
+                    <div>31. MAY</div>
+                  </th>
+                  <th>
+                    <div class="day">SUNDAY</div>
+                    <div>1. JUNE</div>
+                  </th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-flex">
+        <li><a href="#">Terms and conditions</a></li>
+        <li style="float: right">
+          <a href="https://www.instagram.com/noexcuses.co/" target="_blank"
+            ><img class="social" src="img/Instagram.png" alt=""
+          /></a>
+        </li>
+      </div>
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/calender.js"></script>
+    <script src="js/event.js"></script>
   </body>
 </html>

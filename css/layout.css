@@ -1,9 +1,85 @@
-/* Mobile */
+/* Mobile
 @media only screen and (max-width: 480px) {
+     .navbar-flex a:not(:nth-child(4)), .visible {
+        display: none;
+    }
+    
+    .burger{
+        display: block;
+    }
+
+    .social {
+        width: 2rem;
+        height: auto;
+    }
+
+    .footer-flex li a {
+        font-size: 0.5rem;
+    } 
+
+    .responsive-img {
+        display: none;
+    }
 
 }
 
 /* Desktop */
-@media only screen and (min-width: 481px) {
+/* @media only screen and (min-width: 481px) {
+    .burger, .burger-menu {
+        display: none;
+    }
 
+    .social {
+        width: 3rem;
+    }
+
+    .schedule-grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+} */
+
+/* Mobile */
+@media only screen and (max-width: 915px) {
+     .navbar-flex a:not(:nth-child(4)), .visible {
+        display: none;
+    }
+    
+    .burger{
+        display: block;
+    }
+
+    .social {
+        width: 2rem;
+        height: auto;
+    }
+
+    .footer-flex li a {
+        font-size: 0.5rem;
+    } 
+
+    .responsive-img {
+        display: none;
+    }
+
+    .cal-next > th > div, .cal-prev > th > div, .calender-prev > tr > th > div {
+        font-size: 8px;
+    }
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 916px) {
+    .burger, .burger-menu {
+        display: none;
+    }
+
+    .social {
+        width: 3rem;
+    }
+
+    .schedule-grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
