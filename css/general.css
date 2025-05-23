@@ -95,8 +95,8 @@ dialog {
     border: 0cap;
 }
 label {
-    font-family: var(--headline-font);
-    font-size: x-large;
+    font-family: var(--default-font);
+    font-size: larger;
     line-height: 50px;
     letter-spacing: 1px;
 }
